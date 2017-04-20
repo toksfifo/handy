@@ -5,7 +5,24 @@
   "description": "Coming soon...",
   "content_scripts": [{
     "matches": ["<all_urls>"],
-    "js": ["jquery-3.2.1.slim.min.js", "app.js"],
+    "js": ["jquery-3.2.1.min.js", "app.js"],
     "css": ["app.css"]
-  }]
+  }],
+  "web_accessible_resources": [
+    "images/wikipedia.png",
+    "images/twitter.png",
+    "images/google.png",
+    "images/googleMaps.png",
+    "images/youtube.png",
+    "images/spotify.png",
+    "images/amazon.png",
+    "images/ebay.png",
+    "images/linkedin.png",
+    "images/netflix.png",
+    "images/stackoverflow.png",
+    "images/pinterest.png",
+    "images/rt.png",
+    "images/imdb.png",
+    "images/twitter.png"
+  ]
 }

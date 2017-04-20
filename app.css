@@ -1,10 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
 .handy {
-  position: absolute;
-  width: 300px;
-  height: 300px;
+  position: fixed;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
   z-index: 1000;
   top: 50%;
   left: 50%;
-  margin: -150px 0 0 -150px;
+  margin: -250px 0 0 -250px;
   background: white;
+  background-color: rgb(246, 246, 246);
+  -webkit-box-shadow: 0px 2px 10px 4px rgba(0,0,0,0.3);
+  // box-shadow: 0px 0px 26px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 10px 4px rgba(0,0,0,0.3);
+  -webkit-border-radius: 8px;  
+  border-radius: 8px;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-family: Helvetica;
+  font-weight: 300;
+}
+
+.handy-highlight {
+  padding: 2px 10px;
+  border-radius: 6px;
+  // background-color: rgb(0, 249, 46);
+}
+
+.handy-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.handy-title {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.handy-dictionary {
+  font-size: 16px;
+}
+
+.handy-category {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.handy-example {
+  color: rgb(135, 135, 135);
+}
+
+.handy-tiles {
+  width: 230px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.handy-details {
+  width: 230px;
+  height: 400px;
+}
+
+.handy-youtube {
+  height: 160px;
+}
+
+.handy-dictionary {
+  margin-top: 40px;
+  height: 200px;
+}
+
+.handy-tile {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  // border: 1px solid black;
+  background-color: #eff3f6;
+  background-image: -webkit-linear-gradient(270deg, #fafbfc 0%, #eff3f6 90%);
+  background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27,31,35,0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.handy-tile:hover {
+  background-color: #e6ebf1;
+  background-image: -webkit-linear-gradient(270deg, #f0f3f6 0%, #e6ebf1 90%);
+  background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+  background-position: 0 -0.5em;
+  border-color: rgba(27,31,35,0.35);
+}
+
+.handy-tile:active {
+  background-color: #e9ecef;
+  background-image: none;
+  border-color: rgba(27,31,35,0.35);
+  box-shadow: inset 0 0.15em 0.3em rgba(27,31,35,0.15);
+}
+
+.handy-tile-image {
+  width: 40px;
+  height: 40px;
+  // border: 1px solid black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -20px;
 }
