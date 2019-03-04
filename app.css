@@ -1,4 +1,4 @@
-* {
+.handy-container * {
   box-sizing: border-box;
 }
 
@@ -39,6 +39,21 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  opacity: 0;
+}
+.handy-background.is-dark {
+  -webkit-animation: fade 0.5s;
+  animation: fade 0.5s;
+  opacity: 1;
+}
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
 .handy-title {

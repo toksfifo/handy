@@ -24,5 +24,17 @@
     "images/rt.png",
     "images/imdb.png",
     "images/twitter.png"
-  ]
+  ],
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": ["context.js"]
+  },
+  "browser_action": {
+    "default_title": "Click Me"
+  },
+  "icons": {
+    "16": "images/wikipedia.png"
+  }
 }

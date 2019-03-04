@@ -41,7 +41,8 @@ function initHandy() {
     });
 
 
-    const body = $("body")[0];
+    // const body = $("body")[0];
+    const body = $("html")[0];
     // const background = $(``);
 
     const handy = $(`
@@ -102,6 +103,7 @@ function initHandy() {
     
     // $(body).append(background);
     $(body).append(handy); 
+    $(".handy-background").addClass("is-dark");
   }
 }
 
@@ -141,6 +143,13 @@ function closeHandyIfNotClicked(e) {
 document.addEventListener("keyup", trigger);
 document.addEventListener("dblclick", initHandy);
 document.addEventListener("click", closeHandyIfNotClicked);
+
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  initHandy();
+  // debugger;
+  // sendResponse()
+})
+
 
 
 class TileFactory {
